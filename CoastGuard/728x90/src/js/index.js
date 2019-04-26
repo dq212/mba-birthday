@@ -26,7 +26,6 @@ var nameSpace = MBA || {};
 		}
 
 
-
 		click_through.onmouseover = function () {	
 		    TweenMax.to("#arrow", 0.2, { x:2, transformOrigin:"75% 60%", z:0.01, force3D:true, rotationZ: 0.01, transformPerspective: 400});
 		};

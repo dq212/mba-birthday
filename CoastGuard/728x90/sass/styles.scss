@@ -88,6 +88,7 @@ $height: 90px;
 
 #logo {
 	@extend .abs-pos;
+	left:-37px;
 	// background: sprite($sprites, logo);
 }
 
