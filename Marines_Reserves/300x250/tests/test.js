@@ -4,7 +4,7 @@ var imageSize = require('image-size');
 describe('zipfile', function() {
 	it('should be under 150kb', function() {
 
-		var zip = fs.statSync('Seasonal_300x250.zip');
+		var zip = fs.statSync('Marines_Reserves_300x250.zip');
 		var fileSizeInKB = zip['size']/1000;
 		expect(fileSizeInKB).not.toBeGreaterThan(150, '\nZip size is ' + fileSizeInKB + 'kb, it should be less than 150kb');
 	});

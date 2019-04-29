@@ -185,7 +185,7 @@ gulp.task( 'imageCompress', [ 'copy', 'sass' ], function (done) {
 
 gulp.task( 'compress', [ 'clean', 'copy','sass', 'inline', 'replace', 'htmlmin', 'imageCompress' ], function() {
 	return gulp.src(  dist + '/*' )
-			   .pipe( zip( 'Seasonal_300x250.zip' ) )
+			   .pipe( zip( 'Marines_Reserves_300x250.zip' ) )
 			   .pipe( gulp.dest( './' ) );
 });
 
