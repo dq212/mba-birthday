@@ -1,0 +1,94 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/transform";
+@import "compass/utilities/sprites";
+
+// set up variables
+$width: 728px;
+$height: 90px;
+
+// Uncomment to include sprites in your banner
+//  $sprites: sprite-map("sprites/*.png");
+
+// to use sprites, place the image in the sprites folder and set the background for the desired element as follows:
+// .element { background: sprite($sprites, image-name); }
+
+// set all elements to be box-sizing: border box to include any border, padding and content, but not margin.
+*, :before, :after {
+	@include box-sizing(border-box);
+}
+
+// 100% width and height elements that can be positioned easily absolutely
+.abs-pos {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: $width;
+	height: $height; 
+	overflow: hidden;
+}
+
+#wrapper {
+	@extend .abs-pos;
+	position: relative;	
+	visibility: hidden; 
+
+	&.show {
+		visibility: visible;
+	}
+}
+
+#click_through {
+	@extend .abs-pos;
+	z-index: 999;
+	cursor: pointer;
+	background-color: rgba(255,255,255,0);
+	border: 1px solid #000000;
+}	
+
+#copy-1 {
+	@extend .abs-pos;
+	// background: sprite($sprites, copy-1);
+}
+
+#copy-2 {
+	@extend .abs-pos;
+	// background: sprite($sprites, copy-2);
+}
+
+#copy-3 {
+	@extend .abs-pos;
+	// background: sprite($sprites, copy-3);
+}
+
+#copy-4 {
+	@extend .abs-pos;
+	// background: sprite($sprites, copy-4);
+}
+
+#cta {
+	position:absolute;
+	width:108px;
+	height:26px;
+	top:55px;
+	left:606px;
+
+	background-image: url("../img/cta.svg");
+	background-repeat: no-repeat;
+}
+
+#arrow {
+	position: absolute;
+	width:9px;
+	height:8px;
+	top:6px;
+	right:8px;
+	// background: sprite($sprites, arrow);
+}
+
+#logo {
+	@extend .abs-pos;
+	left:-37px;
+	// background: sprite($sprites, logo);
+}
+

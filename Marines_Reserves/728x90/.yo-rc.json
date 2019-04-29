@@ -1,0 +1,13 @@
+{
+  "generator-craft-banner": {
+    "nameSpace": "MBA",
+    "publisher": "doubleclick",
+    "bannerName": "Marines_Reserves_300x250",
+    "width": "300",
+    "height": "250",
+    "size": "150",
+    "includeFallbackIE": true,
+    "fallbackIEVersion": 9,
+    "doubleclickPlatform": "campaignManager"
+  }
+}
